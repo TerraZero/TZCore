@@ -14,6 +14,10 @@ public @interface Plugin {
 
 	public String name();
 	
-	public boolean init() default true;
+	/**
+	 * When set call the method by start
+	 * @return static method
+	 */
+	public String init() default "";
 	
 }
